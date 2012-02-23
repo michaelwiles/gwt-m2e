@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.levigo.m2e.gwt</groupId>
+	<artifactId>com.levigo.m2e.gwt.parent</artifactId>
+	<version>0.0.1.0</version>
+	<packaging>pom</packaging>
+	<name>GWT-Connector for M2E - Parent</name>
+	<description>Manages SuperSource and Resource Folders for GWT-Projects</description>
+
+  <modules>
+    <module>com.levigo.m2e.gwt</module>
+    <module>com.levigo.m2e.gwt.feature</module>
+  </modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<tycho-version>0.14.0</tycho-version>
+<!-- 		<m2e.site-compressed>http://repository.sonatype.org/service/local/repositories/forge-sites/content-compressed/</m2e.site-compressed> -->
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>eclipse</id>
+			<url>http://download.eclipse.org/releases/indigo</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>m2e</id>
+			<url>http://download.eclipse.org/technology/m2e/releases/1.0</url>
+			<layout>p2</layout>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+
+	 	<pluginManagement>
+			<plugins>
+		<!--		<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-surefire-plugin</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<useUIHarness>true</useUIHarness>
+						<includes>
+							<include>**/*Test.java</include>
+						</includes>
+						<argLine>${tycho.test.jvmArgs}
+							-Djava.io.tmpdir=${project.build.directory}/work</argLine>
+						<appArgLine>-eclipse.keyring target/keyring -eclipse.password
+							resources/secure-storage-password.txt -pluginCustomization
+							${basedir}/plugin_customization.ini</appArgLine>
+						<forkedProcessTimeoutInSeconds>600</forkedProcessTimeoutInSeconds>
+					</configuration>
+				</plugin> -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.4.3</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>

@@ -1,0 +1,13 @@
+
+# exclude target directories
+target
+#*/*/target
+
+
+# eclipse project files and directories
+.classpath
+.project
+.settings
+
+# other Folders
+test-output

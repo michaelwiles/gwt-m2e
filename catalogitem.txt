@@ -1,0 +1,20 @@
+<catalogItem>
+  <categoryId>org.eclipse.m2e.discovery.category.lifecycles</categoryId>
+  <m2e-versions>1.0</m2e-versions>
+  <description>Manages SuperSource and Resource Folders for GWT-Projects</description>
+  <groupId>lifecycles</groupId>
+  <id>com.levigo.m2e.gwt</id>
+  <kind>lifecycles</kind>
+  <license>EPL</license>
+  <name>GWT Connector</name>
+  <p2>
+    <repositoryUrl>https://gwt-m2e.googlecode.com/git/updateSite/</repositoryUrl>
+    <iuId>com.levigo.m2e.gwt.feature.feature.group</iuId>
+    <lifecycleMappingIU>
+      <iuId>com.levigo.m2e.gwt.Configurator</iuId>
+    </lifecycleMappingIU>
+  </p2>
+  <overview>
+    <summary>Manages SuperSource and Resource Folders for GWT-Projects</summary>
+  </overview>
+</catalogItem>

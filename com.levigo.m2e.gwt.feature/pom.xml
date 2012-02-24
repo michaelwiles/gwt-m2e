@@ -37,8 +37,8 @@
           </execution>
         </executions>
         <configuration>
-          <metadataRepositoryName>Maven SCM Handler for EGit</metadataRepositoryName>
-          <artifactRepositoryName>Maven SCM Handler for EGit</artifactRepositoryName>
+          <metadataRepositoryName>GWT-Connector for M2E</metadataRepositoryName>
+          <artifactRepositoryName>GWT-Connector for M2E</artifactRepositoryName>
         </configuration>
       </plugin>
       <plugin>

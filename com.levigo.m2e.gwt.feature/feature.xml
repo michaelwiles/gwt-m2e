@@ -2,7 +2,7 @@
 <feature
       id="com.levigo.m2e.gwt.feature"
       label="GWT M2E Connector"
-      version="0.0.1.0"
+      version="0.0.1.1"
       plugin="com.levigo.m2e.gwt">
 
    <description>
@@ -19,14 +19,14 @@
 
    <requires>
       <import feature="org.eclipse.platform" version="3.6.0" match="greaterOrEqual"/>
-      <import feature="org.eclipse.m2e.feature" version="1.0.100.20110804-1717"/>
+      <import feature="org.eclipse.m2e.feature" version="1.1.0.20120530-0009" match="greaterOrEqual"/>
    </requires>
 
    <plugin
          id="com.levigo.m2e.gwt"
          download-size="0"
          install-size="0"
-         version="0.0.1.0"
+         version="0.0.1.1"
          unpack="false"/>
 
 </feature>

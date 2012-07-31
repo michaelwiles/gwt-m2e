@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.levigo.m2e.gwt</groupId>
 	<artifactId>com.levigo.m2e.gwt.parent</artifactId>
-	<version>0.0.1.0</version>
+	<version>0.0.1.1</version>
 	<packaging>pom</packaging>
 	<name>GWT-Connector for M2E - Parent</name>
 	<description>Manages SuperSource and Resource Folders for GWT-Projects</description>
@@ -15,19 +15,19 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<tycho-version>0.14.0</tycho-version>
+		<tycho-version>0.15.0</tycho-version>
 <!-- 		<m2e.site-compressed>http://repository.sonatype.org/service/local/repositories/forge-sites/content-compressed/</m2e.site-compressed> -->
 	</properties>
 
 	<repositories>
 		<repository>
 			<id>eclipse</id>
-			<url>http://download.eclipse.org/releases/indigo</url>
+			<url>http://download.eclipse.org/releases/juno</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>m2e</id>
-			<url>http://download.eclipse.org/technology/m2e/releases/1.0</url>
+			<url>http://download.eclipse.org/technology/m2e/releases/1.1</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>

@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.levigo.m2e.gwt.feature_0.0.1.0.jar" id="com.levigo.m2e.gwt.feature" version="0.0.1.0">
-      <category name="m2e-gwt"/>
-   </feature>
-   <category-def name="m2e-gwt" label="GWT-Connnector for M2E"/>
+
+    <feature
+        id="com.levigo.m2e.gwt.feature"
+        url="features/com.levigo.m2e.gwt.feature_0.0.1.1.jar"
+        version="0.0.1.1" >
+
+        <category name="m2e-gwt" />
+    </feature>
+
+    <feature
+        id="com.levigo.m2e.gwt.feature"
+        url="features/com.levigo.m2e.gwt.feature_0.0.1.0.jar"
+        version="0.0.1.0" >
+
+        <category name="m2e-gwt" />
+    </feature>
+
+    <category-def
+        name="m2e-gwt"
+        label="GWT-Connnector for M2E" />
+
 </site>

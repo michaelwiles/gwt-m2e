@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>com.levigo.m2e.gwt</groupId>
 		<artifactId>com.levigo.m2e.gwt.parent</artifactId>
-		<version>0.0.1.1</version>
+		<version>0.0.1.2</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	
@@ -66,7 +66,7 @@
 		<dependency>
 			<groupId>com.levigo.m2e.gwt</groupId>
 			<artifactId>com.levigo.m2e.gwt</artifactId>
-			<version>0.0.1.1</version>
+			<version>0.0.1.2</version>
 			<type>pom</type>
 		</dependency>
 	</dependencies>

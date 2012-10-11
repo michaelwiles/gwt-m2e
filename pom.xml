@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.levigo.m2e.gwt</groupId>
 	<artifactId>com.levigo.m2e.gwt.parent</artifactId>
-	<version>0.0.1.2</version>
+	<version>0.0.1.3</version>
 	<packaging>pom</packaging>
 	<name>GWT-Connector for M2E - Parent</name>
 	<description>Manages SuperSource and Resource Folders for GWT-Projects</description>

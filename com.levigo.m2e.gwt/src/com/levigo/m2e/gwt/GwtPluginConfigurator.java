@@ -29,10 +29,12 @@ import org.eclipse.m2e.jdt.IJavaProjectConfigurator;
  */
 public class GwtPluginConfigurator extends AbstractProjectConfigurator implements IJavaProjectConfigurator {
 
+  @Override
   public void configure(ProjectConfigurationRequest request, IProgressMonitor monitor) throws CoreException {
 
   }
 
+  @Override
   public void configureRawClasspath(ProjectConfigurationRequest request, IClasspathDescriptor classpath,
       IProgressMonitor monitor) throws CoreException {
 
@@ -48,13 +50,15 @@ public class GwtPluginConfigurator extends AbstractProjectConfigurator implement
         for (String superSourcePath : findSuperSource(source)) {
           final IPath path = new Path(null, superSourcePath);
 
-          final IPath toAdd = source.append(path);
+          // final IPath toAdd = source.append(path);
 
           for (IClasspathEntryDescriptor e : classpath.getEntryDescriptors())
             if (e.getPath().equals(source)) {
               e.addExclusionPattern(path);
             }
-          classpath.addSourceEntry(toAdd, facade.getOutputLocation(), false);
+
+          // only exclude - do NOT add to Source-Path (e.g. emulation folder)
+          // classpath.addSourceEntry(toAdd, facade.getOutputLocation(), false);
         }
       }
     }
@@ -119,6 +123,7 @@ public class GwtPluginConfigurator extends AbstractProjectConfigurator implement
   }
 
 
+  @Override
   public void configureClasspath(IMavenProjectFacade facade, IClasspathDescriptor classpath, IProgressMonitor monitor)
       throws CoreException {
     // All Done in getRawClassPath

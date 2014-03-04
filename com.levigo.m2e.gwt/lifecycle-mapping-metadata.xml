@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lifecycleMappingMetadata>
-  <pluginExecutions>
-    <pluginExecution>
-      <pluginExecutionFilter>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>gwt-maven-plugin</artifactId>
-        <versionRange>[2.4.0,2.6.0)</versionRange>
-        <goals>
-          <goal>resources</goal>
-        </goals>
-      </pluginExecutionFilter>
-      <action>
-        <configurator>
-          <id>com.levigo.m2e.gwt.Configurator</id>
-        </configurator>
-      </action>
-    </pluginExecution>
-  </pluginExecutions>
+	<pluginExecutions>
+		<pluginExecution>
+			<pluginExecutionFilter>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>gwt-maven-plugin</artifactId>
+				<versionRange>[2.4.0,2.6.0)</versionRange>
+				<goals>
+					<goal>resources</goal>
+				</goals>
+			</pluginExecutionFilter>
+			<action>
+				<configurator>
+					<id>com.levigo.m2e.gwt.GwtPluginConfigurator</id>
+				</configurator>
+			</action>
+		</pluginExecution>
+	</pluginExecutions>
 </lifecycleMappingMetadata>

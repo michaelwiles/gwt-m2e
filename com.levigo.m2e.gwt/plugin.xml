@@ -5,7 +5,7 @@
          point="org.eclipse.m2e.core.projectConfigurators">
       <configurator
             class="com.levigo.m2e.gwt.GwtPluginConfigurator"
-            id="com.levigo.m2e.gwt.Configurator"
+            id="com.levigo.m2e.gwt.GwtPluginConfigurator"
             name="GWT Project Configurator">
       </configurator>
    </extension>

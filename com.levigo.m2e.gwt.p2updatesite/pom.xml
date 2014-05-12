@@ -7,7 +7,7 @@
 		<relativePath>../pom.xml</relativePath>
 		<groupId>com.levigo.m2e.gwt</groupId>
 		<artifactId>com.levigo.m2e.gwt.parent</artifactId>
-		<version>1.0.0.0</version>
+		<version>1.0.0.1</version>
 	</parent>
 
 	<artifactId>com.levigo.m2e.gwt.p2updatesite</artifactId>
@@ -30,7 +30,7 @@
 						<configuration>
 							<resources>
 								<resource>
-									<targetPath>${basedir}/../updateSite</targetPath>
+									<targetPath>${basedir}/../updateSite/${project.version}</targetPath>
 									<directory>${project.build.directory}/repository</directory>
 									<preservePath>true</preservePath>
 								</resource>
